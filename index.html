@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>mythology quiz</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+
+    <body>
+
+        <div class="toggle">
+            <label class="switch">
+                <input type="checkbox" id="toggleSwitch">
+                <span class="slider"></span>
+            </label>        
+        </div>
+
+        <div class="menubut" id="menubut" onclick="openNav()">&#9776; </div>
+
+        <div id= "myNav" class="navbar">
+            <a href="#close" class="closebut" onclick="closeNav()">Close Menu &times</a>
+            <a href="#home" onclick="closeModalNav()">Home</a>
+
+            <a href="#myths" onclick="openMyth()">Myth of the day</a>
+            <div id="myth-content" style="display: none;">
+                <p id="titleA">Orpheus and Eurydice</p>
+                <p id="textA">Orpheus, a gifted musician, fell deeply in love with Eurydice, and they celebrated their wedding joyfully. Tragedy struck when Eurydice was bitten by a venomous snake and died.
+                     Grief-stricken, Orpheus decided to journey to the Underworld to retrieve his beloved. Armed with his enchanting music, he charmed the gods and gained permission to bring Eurydice back,
+                     but there was a condition: he must not look back until they reached the surface. In his overwhelming anticipation, Orpheus couldn't resist glancing back, and Eurydice vanished forever.
+                     Heartbroken, Orpheus wandered the earth in sorrow, playing mournful tunes that moved even the rocks and trees. Eventually, he encountered a group of frenzied women, the Maenads, who disapproved of his grief.
+                     In their fury, they tore Orpheus apart, ending his poignant melodies. The Muses gathered his remains and gave him a proper burial. Orpheus and Eurydice's tragic love story became a timeless tale of love, loss,
+                     and the consequences of succumbing to impatience and doubt.</p>
+            </div>
+
+            <a href="#about" onclick="openAbout()">About</a>
+            <div id="about-content" style="display: none;">
+                <p id="titleA">About us</p>
+                <p id="textA">
+                     The Mythology Quiz is a celebration of the threads that connect humanity, weaving a narrative that stretches across civilizations, sparking wonder and igniting the imagination.
+                     This quiz, a carefully crafted exploration of the mythical realms, challenges your knowledge and invites you to discover hidden truths about gods, heroes, and creatures that have
+                     captivated humanity for centuries. Whether you're a seasoned mythologist or a curious seeker taking your first steps, the quiz is designed to celebrate the diversity and enchantment 
+                     found in the stories that have shaped cultures throughout history. Embark on this odyssey of knowledge, where every question serves as a portal to a new realm of discovery.
+                     May your journey be as epic as the myths themselves!
+                </p>
+            </div>
+
+            <a href="#contact" onclick="openContact()">Contact</a>
+            <div id="contact-content" style="display: none;">
+                <p id="titleA">Contact us</p>
+                <p>Email: <a href="mailto:feedback@mythologyquiz.com">feedback@mythologyquiz.com</a></p>
+                <p>Phone: +1 (999) 333-3639</p>
+            </div>
+
+
+        </div> 
+
+        <div id="main" class="main">
+            <div>
+                <h1>Mythology quiz</h1>
+                <div id="quizOptions">
+                    <select id="mythologySelect">
+                        <option value="greek">Greek Mythology</option>
+                        <option value="norse">Norse Mythology</option>
+                        <option value="roman">Roman Mythology</option>
+                    </select>
+                </div>
+
+                <button class="starting" onclick="openQuizModal()">Start Quiz</button>
+
+                <div class="quote">
+                    <p>Mythology is the womb of mankind's creation.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="quiz-modal">
+            <div id="quiz-container">
+                <h2 id="question"></h2>
+                <div id="options"></div>
+                <p>Legends carve pathways through time, revealing the eternal dance of gods and mortals.</p>
+            </div>
+        </div>
+
+        <div id="results-modal">
+            <div id="results-container"> aaa</div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
